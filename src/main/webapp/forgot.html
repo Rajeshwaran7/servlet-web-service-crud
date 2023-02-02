@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forget Password</title>
+<link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link rel="stylesheet" type="text/css" href="./css/Login.css">
+
+</head>
+<body>
+<header>
+<h1> Student App </h1>
+<nav>
+<ol>
+<li><a href="./Home.html">Home</a></li>
+<li><a href="./Post.html"> Register</a></li>
+<li><a href="./LogIn.html"> Log In</a></li>
+<li><a href="./forgot.html"> Forgot password</a></li>
+</ol>
+</nav>
+<hr>
+
+</header>
+
+<div class="bd">
+<div class="Regi">
+<h3>Forgot Password</h3>
+<hr>
+<form class="form" id="myForm" action="forgot" method="post">
+<div class="form2">
+<label> Enter your Email     </label>
+<input type="email" name="email" id="email"  required/>
+</div>
+<div class="form2">
+<label> New Password      </label>
+ <input type="text" name="password" id="password" required/>
+</div>
+<div class="form2">
+<label> Retype Password      </label>
+ <input type="text" name="password2" id="password2" required/>
+</div>
+<div class="btn">
+<button type="submit">Update</button>
+</div>
+</form>
+<div class="login">
+<a href="./Home.html">Back</a>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="footer">
+
+  <ul>
+         <li>a<a href="#">About Us</a></li>
+          <li>a<a href="#">Contact Us</a></li>
+          <li>a<a href="#">Mail</a></li>
+          <li>a<a href="#">Help</a></li>
+          <li>a<a href="#">Location</a></li>
+          
+                
+  </ul>
+</div>
+</footer>
+ 	 <script>
+      var form = document.getElementById("myForm");
+      form.addEventListener("submit", function(event) {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var password2 = document.getElementById("password2").value;
+         	
+        if (email == "") {
+          alert("Email is required");
+          event.preventDefault();
+        }
+    
+        if (!password) {
+          alert("Password is required");
+          event.preventDefault();
+        }
+        if(password != password2){
+          
+          alert("Mis match Password");
+          event.preventDefault();
+        }
+      });
+    </script>
+</body>
+</html>

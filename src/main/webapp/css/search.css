@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body {
+	margin-top: 0%;
+
+background: linear-gradient(113.1deg, rgb(254, 140, 48) 14%, rgb(253, 75, 101) 80.5%, rgb(255, 53, 109) 100.6%);
+
+}
+
+.Regi{
+
+ height: 300px;
+ width: 400px;
+ margin: 70px 470px 30px;
+ display: block;
+ max-width: 100%;
+ width: 400px;
+ background-color: white;
+ box-shadow: 10px 20px 25px rgb(0, 0, 0,1);
+ border-radius: 14px;
+}
+h3{
+	margin-top:10px;
+  text-align: center;	
+  
+}
+.Regi .form lable{
+	margin-left: 100px;
+	padding-left: 100px
+}
+.bd{	
+	
+font-family: sans-serif;
+justify-content: center;
+height: 600px;
+margin-bottom: 200px;
+}
+
+.form{
+	    padding: 30px 40px;	
+}
+.form2{
+	margin-bottom: 5px;
+    padding-bottom: 4px;
+    position: relative;
+}
+.form2 lable{
+	display: inline-block;
+    margin-bottom: 5px;
+	
+}
+.form2 input{
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form2 input:focus{
+    outline: none;
+    border-color: #777;
+}
+hr{
+	color: white;
+}
+
+.btn button{
+    background-color: #004080;
+    border: none;
+    color: #ffff;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #039e00;
+    border: none;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: #777;
+}
+.login{
+text-align: center;
+text-decoration:none;
+margin-bottom: 10px;
+}
+.login:hover{
+	font-weight:bolder; 
+}
+.footer{
+	
+	background-color: black;
+	height: 130px;
+	width: 100%;
+	border: 1px solid black; 
+}
+.footer div ul{
+	color: white;
+	font-size: 22px;
+
+	}
+ul{
+	list-style-type: none;
+	text-decoration: none;
+}
+ul a:visited{
+	color: white;
+	
+}
+ul a:hover {
+	color: aqua;
+	font-size: 22px;
+	font-weight: bolder;
+}
+ul{
+	display: flex;
+	justify-content: space-around;	
+}
+

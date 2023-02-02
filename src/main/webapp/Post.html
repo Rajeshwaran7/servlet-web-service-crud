@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link rel="stylesheet" type="text/css" href="./css/Style.css">
+</head>
+<body>
+ 	
+<header>
+<h1> Student App </h1>
+<nav>
+<ol>
+<li><a href="./Home.html">Home</a></li>
+<li><a href="./Post.html"> Register</a></li>
+<li><a href="./LogIn.html"> Log In</a></li>
+<li><a href="./forgot.html"> Forgot password</a></li>
+</ol>
+</nav>
+<hr>
+</header>
+
+
+
+<div class="bd">
+<div class="Regi">
+<div class="head">
+  <h3>Registration</h3>
+  <hr>
+</div>
+
+<form id="myForm" class="form" action="post" method="POST">
+<div class="form2">
+<label>StudentId   </label>
+<input type="number" name="sid" min="1" required/>
+</div>
+<div class="form2">
+<label>Name      </label>
+<input type="text" name="name" id="username" required/>
+</div>
+<div class="form2">
+<label>Marks     </label>
+<input type="text" name="marks" id="marks" required/>
+</div>
+<div class="form2">
+<label>Email     </label>
+<input type="email" name="email" id="email" required/>
+</div>
+<div class="form2">
+<label> Password      </label>
+ <input type="text" name="password" id="password" required/>
+</div>
+<div class="btn">
+<button type="submit">Submit</button>
+</div>
+</form>
+<div class="login">
+<a href="./LogIn.html">Already have Account ?</a>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="footer">
+
+  <ul>
+         <li><a href="./Aboutus.html">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Mail</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Location</a></li>
+          
+                
+  </ul>
+</div>
+</footer>
+ <script>
+      var form = document.getElementById("myForm");
+      form.addEventListener("submit", function(event) {
+        var username =document.getElementById("username").value;
+        var marks=doument.getElementById("marks").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+         var ma =/^\d+(\.\d{1,2})?$/;
+        if(form.name.trim() == ""){
+          alert("username is required");
+          event.preventDefault();
+        }
+        if(form.marks != ma){
+        	alert("Please enter Correct value!!")
+        	event.preventDefault();
+        }
+        if (form.email == "") {
+          alert("Email is required");
+          event.preventDefault();
+        }
+    
+        if (!form.password) {
+          alert("Password is required");
+          event.preventDefault();
+        }
+      });
+    </script> 
+   
+</body>
+</html>

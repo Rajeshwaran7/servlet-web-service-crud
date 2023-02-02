@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	margin-top:0%;
+}
+
+body{
+		margin: 0%;
+	
+}
+header{
+	margin: 0%;
+      background: rgba(0,0,0,0.50);
+	}
+nav ol{
+	display:flex;
+	justify-content: space-around;
+	list-style-type: none;
+	
+}
+h1{
+	text-align: center;
+	color: white;
+}
+
+	
+nav ol a:visited{
+		      background-color: yellow;	
+      color: white;
+}
+nav ol a:hover {
+	   color:#00ff40;
+	   	font-size: 30px;
+	   	font-weight: bolder;
+	   	
+}
+nav ol a:link {
+	text-decoration: none;
+	font-size: 18px;
+	height: 25px;
+	width: 100%;
+    border:thick;
+    border-radius:3px;
+	font-weight: bolder;
+	
+}
